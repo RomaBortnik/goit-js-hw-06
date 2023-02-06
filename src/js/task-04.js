@@ -6,14 +6,12 @@ let counterValue = 0;
 
 const incrementFunction = event => {
   counterValue += 1;
-  value.textContent = counterValue;
-  return value.textContent;
+  return (value.textContent = counterValue);
 };
 
 const decrementFunction = event => {
   counterValue -= 1;
-  value.textContent = counterValue;
-  return value.textContent;
+  return (value.textContent = counterValue);
 };
 
 decrBtn.addEventListener('click', decrementFunction);
