@@ -2,8 +2,9 @@ const button = document.querySelector('.change-color');
 const label = document.querySelector('.color');
 
 const onChangeBodyBackground = () => {
-  document.body.style.backgroundColor = getRandomHexColor();
-  label.textContent = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  document.body.style.backgroundColor = randomColor;
+  label.textContent = randomColor;
 };
 
 function getRandomHexColor() {
